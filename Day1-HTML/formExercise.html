@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form</title>
+  </head>
+  <body>
+    <!-- Links -->
+    <div>
+      <a href="index.html" target="_blank"
+        ><img src="./home.jpeg" alt="home" width="100" height="100"
+      /></a>
+    </div>
+    <!-- Form -->
+    <center>
+      <form>
+        <table>
+          <!-- position -->
+          <tr>
+            <td><label>Select Position: </label></td>
+            <td>
+              <select>
+                <option value="none" disabled selected>--None--</option>
+                <option value="manager">Manager</option>
+                <option value="director">Director</option>
+                <option value="ceo">Ceo</option>
+                <option value="assistantDirector">Assistant Director</option>
+              </select>
+            </td>
+          </tr>
+          <!-- first name -->
+          <tr>
+            <td><label>First Name: </label></td>
+            <td>
+              <input type="text" placeholder="Enter your first name" required />
+            </td>
+          </tr>
+          <!-- last name -->
+          <tr>
+            <td><label>Last Name: </label></td>
+            <td>
+              <input type="text" placeholder="Enter your last name" required />
+            </td>
+          </tr>
+          <!-- gender -->
+          <tr>
+            <td><label>Gender: </label></td>
+            <td>
+              <input type="radio" name="gender" />Male
+              <input type="radio" name="gender" />Female
+            </td>
+          </tr>
+          <!-- email -->
+          <tr>
+            <td><label>Email: </label></td>
+            <td><input type="email" placeholder="Enter your email" /></td>
+          </tr>
+          <!-- date of birth -->
+          <tr>
+            <td><label>Date of birth: </label></td>
+            <td><input type="date" /></td>
+          </tr>
+          <!-- address -->
+          <tr>
+            <td><label>Address: </label></td>
+            <td><textarea cols="40" rows="5"></textarea></td>
+          </tr>
+          <!-- submit -->
+          <tr>
+            <td><input type="submit" value="Submit" /></td>
+          </tr>
+        </table>
+      </form>
+    </center>
+  </body>
+</html>
