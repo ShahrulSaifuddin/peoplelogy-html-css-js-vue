@@ -1,11 +1,12 @@
-/* h5 {
-  color: salmon;
+*,
+::after,
+::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-h6 {
-  color: aquamarine;
-} */
-
+/* INDEX */
 .heading5 {
   color: salmon;
 }
@@ -19,6 +20,7 @@ body {
   font-family: 'Noto Sans JP', sans-serif;
 }
 
+/* TABLE */
 .caption {
   padding: 1rem 0;
   text-align: center;
@@ -46,4 +48,183 @@ td:hover {
   cursor: pointer;
   background-color: aliceblue;
   font-weight: bolder;
+}
+
+/* LIST */
+ol li {
+  list-style-type: lower-roman;
+}
+
+ol li a {
+  text-decoration: none;
+  color: blue;
+  margin-left: 0.5rem;
+}
+
+ol li a:hover {
+  color: rgb(24, 24, 122);
+}
+
+ul {
+  list-style-type: circle;
+}
+
+/* NAVBAR */
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+}
+
+.item {
+  margin: 5px 0px;
+  text-align: center;
+  margin: 0.75rem;
+  padding: 0.375rem 0.75rem;
+  cursor: pointer;
+  text-transform: capitalize;
+  transition: 0.3s ease-in-out all;
+  border: 1px solid transparent;
+  border-radius: 0.25rem;
+  letter-spacing: 1px;
+  background-color: #06b6d4;
+  color: white;
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+}
+
+.item:hover {
+  background-color: #0e7490;
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
+    0 4px 6px -2px rgba(0, 0, 0, 0.05);
+}
+
+/* POSITION */
+.container1 {
+  width: 100%;
+  height: 300vh;
+  background-color: green;
+  display: flex;
+  position: relative;
+}
+
+.container1 div {
+  width: 100px;
+  position: absolute;
+  height: 100px;
+}
+
+#item1 {
+  background-color: red;
+  top: 0;
+  left: 0;
+  /* position: fixed; */
+}
+
+#item2 {
+  background-color: yellow;
+  top: 10px;
+  left: 10px;
+}
+
+#item3 {
+  background-color: black;
+  top: 20px;
+  left: 20px;
+}
+
+#item4 {
+  background-color: salmon;
+  top: 30px;
+  left: 30px;
+}
+
+/* Links */
+div a {
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 1;
+  background-color: #06b6d4;
+  padding: 0.375rem 0.75rem;
+  border-radius: 0.25rem;
+  text-decoration: none;
+}
+
+/* ANIMATION */
+.animation-container {
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+  background-color: red;
+  animation: animation1 1s linear 0s infinite alternate-reverse;
+  position: relative;
+}
+
+@keyframes animation1 {
+  0% {
+    background-color: red;
+    left: 100px;
+    top: 0px;
+  }
+  25% {
+    background-color: yellow;
+    left: 200px;
+    top: 100px;
+  }
+  50% {
+    background-color: blue;
+    left: 100px;
+    top: 200px;
+  }
+  75% {
+    background-color: green;
+    left: 0px;
+    top: 100px;
+  }
+  100% {
+    background-color: red;
+    left: 100px;
+    top: 0px;
+  }
+}
+
+/* MEDIA */
+.containerMedia {
+  width: 90%;
+  max-width: 600px;
+  text-align: center;
+  margin: 0 auto;
+  margin-top: 3rem;
+}
+
+/* Extra small devices (phones, 600px and down) */
+/* @media only screen and (max-width: 600px) {} */
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+  .containerMedia {
+    color: red;
+  }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  .containerMedia {
+    color: yellow;
+  }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  .containerMedia {
+    color: greenyellow;
+  }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+  .containerMedia {
+    color: purple;
+  }
 }
