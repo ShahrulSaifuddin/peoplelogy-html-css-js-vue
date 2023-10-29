@@ -1,0 +1,49 @@
+/* h5 {
+  color: salmon;
+}
+
+h6 {
+  color: aquamarine;
+} */
+
+.heading5 {
+  color: salmon;
+}
+
+#heading6 {
+  color: aquamarine;
+  background-color: black;
+}
+
+body {
+  font-family: 'Noto Sans JP', sans-serif;
+}
+
+.caption {
+  padding: 1rem 0;
+  text-align: center;
+}
+
+table {
+  border-collapse: collapse;
+  width: 90%;
+  margin: 0 auto;
+  max-width: 500px;
+}
+
+th,
+td {
+  border: 1px solid;
+  text-align: center;
+  padding: 0.3rem 0;
+}
+
+th {
+  background-color: rgb(231, 223, 223);
+}
+
+td:hover {
+  cursor: pointer;
+  background-color: aliceblue;
+  font-weight: bolder;
+}
