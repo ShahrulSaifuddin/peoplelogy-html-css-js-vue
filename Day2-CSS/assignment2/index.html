@@ -10,6 +10,11 @@
     />
     <!-- styles -->
     <link rel="stylesheet" href="styles.css" />
+    <!-- Google Font -->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Sofia&effect=fire"
+    />
     <title>Assignment 2</title>
   </head>
   <body>
@@ -46,7 +51,7 @@
       <!-- banner -->
       <div class="banner">
         <div class="container">
-          <h1>group 5 project</h1>
+          <h1 class="font-effect-fire">group 5 project</h1>
           <p>
             Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quas eos
             neque sunt in? Id, necessitatibus quos quisquam distinctio
@@ -65,7 +70,7 @@
         <div class="about-us-container">
           <!-- single person -->
           <article class="about-us">
-            <img src="./images/hero.jpg" alt="" class="img" />
+            <img src="./images/profile-picture.jpeg" alt="" class="img" />
             <div class="info">
               <h3>shahrul saifuddin</h3>
               <h5>founder</h5>
@@ -136,13 +141,7 @@
             </div>
             <div class="form-row">
               <label class="form-label">message</label>
-              <textarea
-                name=""
-                id=""
-                cols="30"
-                rows="40"
-                class="form-textarea"
-              ></textarea>
+              <textarea cols="30" rows="40" class="form-textarea"></textarea>
             </div>
             <button type="submit" class="btn btn-block">submit</button>
           </form>
@@ -152,10 +151,40 @@
     </section>
     <!-- footer -->
     <footer class="section">
-      <p>
-        copyright &copy; backroads travel tours company
-        <span id="date"></span>. all rights reserved
-      </p>
+      <div>
+        <p>
+          copyright &copy; backroads travel tours company
+          <span id="date"></span>. all rights reserved
+        </p>
+      </div>
+      <!-- social media -->
+      <ul class="social-icons">
+        <li>
+          <a href="https://www.facebook.com" target="_blank">
+            <i class="fab fa-facebook"></i>
+          </a>
+        </li>
+        <li>
+          <a href="https://www.twitter.com" target="_blank">
+            <i class="fab fa-twitter"></i>
+          </a>
+        </li>
+        <li>
+          <a href="https://www.behance.com" target="_blank">
+            <i class="fab fa-behance"></i>
+          </a>
+        </li>
+        <li>
+          <a href="https://www.linkedin.com" target="_blank">
+            <i class="fab fa-linkedin"></i>
+          </a>
+        </li>
+        <li>
+          <a href="https://www.sketch.com" target="_blank">
+            <i class="fab fa-sketch"></i>
+          </a>
+        </li>
+      </ul>
     </footer>
     <a class="scroll-link top-link" href="#home">
       <i class="fas fa-arrow-up"></i>
