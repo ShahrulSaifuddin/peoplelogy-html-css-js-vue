@@ -2,6 +2,7 @@ const toggleMenuBtn = document.querySelector('.nav-toggle')
 const topLink = document.querySelector('.top-link')
 const navbar = document.getElementById('nav')
 const linksContainer = document.querySelector('.links-container')
+const submitBtn = document.querySelector('.btn-block')
 
 /* HIDE AND SHOW NAVBAR */
 toggleMenuBtn.addEventListener('click', function () {
@@ -63,3 +64,8 @@ scrollLinks.forEach((link) => {
   })
 })
 // calculate heights
+
+/* prevent default submit button */
+submitBtn.addEventListener('click', function (e) {
+  e.preventDefault()
+})
