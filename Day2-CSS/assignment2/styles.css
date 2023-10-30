@@ -336,11 +336,11 @@ header {
   color: var(--clr-secondary);
 }
 #about,
-#services,
-#tours {
+#projects,
+#contact {
   min-height: 80vh;
 }
-#services {
+#projects {
   background: var(--clr-white);
 }
 /* about us */
