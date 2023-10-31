@@ -4,12 +4,18 @@ const navbar = document.getElementById('nav')
 const linksContainer = document.querySelector('.links-container')
 const submitBtn = document.querySelector('.btn-block')
 
+/* preloader */
+const preloader = document.querySelector('.preloader')
+
+window.addEventListener('load', function () {
+  preloader.classList.add('hide-preloader')
+})
+
 /* HIDE AND SHOW NAVBAR */
 toggleMenuBtn.addEventListener('click', function () {
   console.log('hello')
   linksContainer.classList.toggle('show-links')
 })
-/* HIDE AND SHOW NAVBAR */
 
 /* Fixed navbar */
 window.addEventListener('scroll', function () {
