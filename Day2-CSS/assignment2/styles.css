@@ -185,11 +185,10 @@ main {
   object-fit: cover;
 }
 
-/* NAVBAR */
+/* navbar */
 .logo {
   height: 50px;
 }
-/* navbar */
 nav {
   background: var(--clr-white);
   padding: 1rem 1.5rem;
@@ -324,6 +323,7 @@ header {
   max-width: 25rem;
   margin: 0 auto;
   margin-bottom: 1.25rem;
+  font-family: Georgia, 'Times New Roman', Times, serif;
 }
 @media screen and (min-width: 768px) {
   .container p {
@@ -346,60 +346,83 @@ header {
 #projects {
   background: var(--clr-white);
 }
-/* about us */
+/* about us and projects*/
 .img {
   width: 100%;
   display: block;
   object-fit: cover;
 }
-.about-us-container {
+.about-us-container,
+.projects-container {
   padding: 2rem 0;
   display: grid;
   gap: 2rem;
 }
-.about-us {
+.about-us,
+.project {
   background: var(--clr-white);
   border-radius: var(--radius);
   box-shadow: var(--light-shadow);
   transition: var(--transition);
+  position: relative;
 }
-.about-us:hover {
+.github {
+  position: absolute;
+  top: 0;
+  right: 0;
+  font-size: 2rem;
+  color: var(--clr-black);
+  background-color: var(--clr-white);
+  padding: 0 1rem;
+  border-bottom-left-radius: 50%;
+}
+.about-us:hover .github {
+  color: var(--clr-white);
+  background-color: var(--clr-black);
+}
+.about-us:hover,
+.project:hover {
   box-shadow: var(--dark-shadow);
   transform: scale(1.01);
   overflow: hidden;
 }
-.about-us .img {
-  height: 30rem;
+.about-us .img,
+.project .img {
+  height: 20rem;
   border-top-right-radius: var(--radius);
   border-top-left-radius: var(--radius);
 }
 .info {
   padding: 2rem 1.5rem;
 }
-.info h5 {
+.info h4 {
   margin-bottom: 1rem;
   line-height: 1.5;
   text-transform: capitalize;
 }
 .info p {
   line-height: 1.5;
-  color: var(--grey-500);
+  color: var(--clr-grey-5);
   margin-bottom: 1.25rem;
+  text-align: justify;
 }
 @media screen and (min-width: 700px) {
-  .about-us-container {
+  .about-us-container,
+  .projects-container {
     grid-template-columns: 1fr 1fr;
     /* fix stretch */
     align-items: start;
   }
 }
 @media screen and (min-width: 992px) {
-  .about-us-container {
+  .about-us-container,
+  .projects-container {
     grid-template-columns: 1fr 1fr 1fr;
     /* fix stretch */
     align-items: start;
   }
 }
+
 /* contact */
 .form {
   padding: 1rem;
@@ -458,6 +481,7 @@ header {
     border-bottom-left-radius: var(--radius);
   }
 }
+
 /* footer */
 footer {
   background: var(--clr-grey-1);
@@ -484,6 +508,7 @@ footer p {
   color: var(--clr-secondary);
 }
 
+/* button to top page */
 .top-link {
   font-size: 1.25rem;
   position: fixed;
