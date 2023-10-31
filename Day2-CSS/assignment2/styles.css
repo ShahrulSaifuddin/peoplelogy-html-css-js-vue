@@ -485,7 +485,7 @@ header {
 /* footer */
 footer {
   background: var(--clr-grey-1);
-  padding: 5rem 1rem;
+  padding: 5rem 2rem;
 }
 footer p {
   color: var(--clr-white);
