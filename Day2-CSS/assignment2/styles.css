@@ -185,26 +185,6 @@ main {
   object-fit: cover;
 }
 
-/* preloader */
-.preloader {
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background: var(--clr-white);
-  display: grid;
-  justify-content: center;
-  align-items: center;
-  visibility: visible;
-  z-index: 999;
-  transition: var(--transition);
-}
-.hide-preloader {
-  z-index: -999;
-  visibility: hidden;
-}
-
 /* navbar */
 .logo {
   height: 50px;
@@ -213,6 +193,7 @@ nav {
   background: var(--clr-white);
   padding: 1rem 1.5rem;
   width: 100%;
+  position: relative;
 }
 .nav-toggle:hover {
   color: var(--clr-primary-1);
@@ -257,9 +238,10 @@ nav {
   height: 50px;
 }
 .links-container {
-  height: 0;
-  overflow: hidden;
+  /* height: 0; */
+  /* overflow: hidden; */
   transition: var(--transition);
+  display: none;
 }
 .show-links {
   height: 200px;
@@ -279,6 +261,30 @@ nav {
   color: var(--clr-secondary);
   padding-left: 0.75rem;
 }
+/* hide show navbar */
+.drop {
+  cursor: pointer;
+  display: block;
+  float: right;
+}
+
+input[type='checkbox'] {
+  display: none; /* hide the checkboxes */
+}
+
+.nav-toggle {
+  position: absolute;
+  top: 30px;
+  right: 20px;
+}
+
+input + .drop + .links-container {
+  display: none;
+}
+
+input:checked + .drop + .links-container {
+  display: block;
+}
 @media screen and (min-width: 800px) {
   nav {
     background: transparent;
@@ -297,8 +303,11 @@ nav {
   .nav-toggle {
     display: none;
   }
-  .links-container {
+  /* .links-container {
     height: auto !important;
+  } */
+  .links-container {
+    display: block !important;
   }
   .links {
     display: flex;
@@ -321,11 +330,13 @@ nav {
   }
 }
 /* hero */
-/* header {
-  min-height: 100vh;
-  background: linear-gradient(rgba(63, 208, 212, 0.5), rgba(0, 0, 0, 0.7)),
-    url(./images/hero.jpg) center/cover no-repeat;
-} */
+@media (pointer: none), (pointer: coarse) {
+  header {
+    min-height: 100vh;
+    background: linear-gradient(rgba(63, 208, 212, 0.5), rgba(0, 0, 0, 0.7)),
+      url(./images/hero.jpg) center/cover no-repeat;
+  }
+}
 header {
   min-height: 100vh;
   position: relative;
@@ -568,13 +579,13 @@ footer p {
   border-radius: var(--radius);
   color: var(--clr-white);
   animation: bounce 2s ease-in-out infinite;
-  visibility: hidden;
-  z-index: -100;
-}
-.show-link {
   visibility: visible;
   z-index: 100;
 }
+/* .show-link {
+  visibility: visible;
+  z-index: 100;
+} */
 
 @keyframes bounce {
   0% {
