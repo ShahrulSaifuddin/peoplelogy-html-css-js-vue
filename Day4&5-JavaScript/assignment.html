@@ -5,12 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Assignment js</title>
     <style>
-      .container {
+      #container {
         display: grid;
         place-items: center;
         height: 90vh;
       }
-      .btn {
+      #btn {
         text-transform: uppercase;
         background: transparent;
         color: black;
@@ -24,20 +24,24 @@
         box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
         border-radius: 0.5rem;
       }
-      .btn:hover {
+      #btn:hover {
         color: white;
         background: black;
       }
     </style>
   </head>
   <body>
-    <button class="btn">html button</button>
+    <!-- simple button -->
+    <button id="btn">html button</button>
     <!-- javascript -->
     <script>
+      /* Welcome Alert for user */
       alert('Welcome!');
       console.log('Welcome!');
+
+      /* display button from javascript */
       document.write(
-        '<div class="container"><button class="btn">javascript button</button></div>'
+        '<div id="container"><button id="btn">javascript button</button></div>'
       );
     </script>
   </body>
