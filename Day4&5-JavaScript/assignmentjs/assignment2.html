@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Assignment 2</title>
+  </head>
+  <body>
+    <label>Enter any text: </label>
+    <input type="text" id="text" />
+    <button onclick="result()">result</button>
+    <div id="result"></div>
+
+    <script>
+      const userText = document.getElementById('text');
+      const displayResult = document.getElementById('result');
+
+      function result() {
+        let position = 'Positions: ';
+        for (let i = 0; i < userText.value.length; i++) {
+          position +=
+            'Character ' + userText.value[i] + ' in position ' + i + ', ';
+        }
+        displayResult.innerHTML =
+          'Text length: ' +
+          userText.value.length +
+          '<br>' +
+          'Text Uppercase: ' +
+          userText.value.toUpperCase() +
+          '<br>' +
+          position;
+      }
+    </script>
+  </body>
+</html>
