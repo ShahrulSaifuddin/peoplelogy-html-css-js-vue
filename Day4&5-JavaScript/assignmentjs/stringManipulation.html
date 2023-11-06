@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Assignment 2</title>
+  </head>
+  <body>
+    <center>
+      <h1>String Manipulation</h1>
+    </center>
+    <div>
+      <label>Enter any text: </label>
+      <input type="text" id="text" />
+      <button onclick="result()">result</button>
+    </div>
+    <div>
+      <label>Search string position: </label>
+      <input type="text" id="position" />
+      <button onclick="searchString()">Submit</button>
+    </div>
+    <div>
+      <h4>Result:</h4>
+      <div id="result"></div>
+    </div>
+    <div id="charResultDOM"></div>
+
+    <script>
+      const stringDOM = document.getElementById('text');
+      const stringResultsDOM = document.getElementById('result');
+      const charDOM = document.getElementById('position');
+      const charResultDOM = document.getElementById('charResultDOM');
+      let textArray = '';
+
+      function result() {
+        let position = '';
+        let character = '';
+        textArray = stringDOM.value.split('');
+        if (textArray.length === 0) return;
+
+        /* to display all character indices */
+        // for (let i = 0; i < stringDOM.value.length; i++) {
+        //   if (stringDOM.value[i] === ' ') {
+        //     character = 'white space';
+        //   } else {
+        //     character = stringDOM.value[i];
+        //   }
+        //   position += 'Character ' + character + ' in position ' + i + '<br>';
+        // }
+
+        // stringResultsDOM.innerHTML =
+        //   'Text length: ' +
+        //   stringDOM.value.length +
+        //   '<br>' +
+        //   'Text Uppercase: ' +
+        //   stringDOM.value.toUpperCase() +
+        //   '<br>' +
+        //   position +
+        //   '<br>';
+
+        searchString();
+
+        stringResultsDOM.innerHTML =
+          'Text length: ' +
+          stringDOM.value.length +
+          '<br>' +
+          'Text Uppercase: ' +
+          stringDOM.value.toUpperCase() +
+          '<br>';
+      }
+
+      function searchString() {
+        let resultPosition = textArray.indexOf(charDOM.value);
+        console.log(resultPosition);
+        if (stringDOM.value === '') {
+          return alert(
+            'Please enter any text to get the result before you can find the index of any character.'
+          );
+        }
+        if (charDOM.value.length > 1) {
+          alert('You can only search one character index at a time');
+        } else if (charDOM.value === '') {
+          return;
+        } else {
+          charResultDOM.innerHTML =
+            'Position of character ' + charDOM.value + ': ' + resultPosition;
+        }
+        if (resultPosition === -1) {
+          resultPosition = '';
+        }
+      }
+    </script>
+  </body>
+</html>
