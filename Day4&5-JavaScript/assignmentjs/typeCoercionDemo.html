@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Type Coercion Demo</title>
+  </head>
+  <body>
+    <!-- Title -->
+    <center>
+      <h1>Type Coercion Demo</h1>
+    </center>
+    <!-- Form -->
+    <div>
+      <input type="text" placeholder="Enter first number" id="num1" />
+    </div>
+    <div>
+      <input type="text" placeholder="Enter second number" id="num2" />
+    </div>
+    <button onclick="submit()">Submit</button>
+    <div>
+      <div>
+        <h4>String & String</h4>
+        <div id="add1"></div>
+        <div id="subtract1"></div>
+        <div id="multiply1"></div>
+        <div id="divide1"></div>
+      </div>
+      <div>
+        <h4>Number & String</h4>
+        <div id="add2"></div>
+        <div id="subtract2"></div>
+        <div id="multiply2"></div>
+        <div id="divide2"></div>
+      </div>
+      <div>
+        <h4>Number & Number</h4>
+        <div id="add3"></div>
+        <div id="subtract3"></div>
+        <div id="multiply3"></div>
+        <div id="divide3"></div>
+      </div>
+      <div>
+        <h4>String & Number</h4>
+        <div id="add4"></div>
+        <div id="subtract4"></div>
+        <div id="multiply4"></div>
+        <div id="divide4"></div>
+      </div>
+    </div>
+
+    <!-- Javascript -->
+    <script>
+      /* Declare variable */
+      const num1DOM = document.getElementById('num1');
+      const num2DOM = document.getElementById('num2');
+
+      const result1DOM = document.getElementById('result1');
+      const result2DOM = document.getElementById('result2');
+      const result3DOM = document.getElementById('result3');
+
+      const add1DOM = document.getElementById('add1');
+      const subtract1DOM = document.getElementById('subtract1');
+      const multiply1DOM = document.getElementById('multiply1');
+      const divide1DOM = document.getElementById('divide1');
+
+      const add2DOM = document.getElementById('add2');
+      const subtract2DOM = document.getElementById('subtract2');
+      const multiply2DOM = document.getElementById('multiply2');
+      const divide2DOM = document.getElementById('divide2');
+
+      const add3DOM = document.getElementById('add3');
+      const subtract3DOM = document.getElementById('subtract3');
+      const multiply3DOM = document.getElementById('multiply3');
+      const divide3DOM = document.getElementById('divide3');
+
+      const add4DOM = document.getElementById('add4');
+      const subtract4DOM = document.getElementById('subtract4');
+      const multiply4DOM = document.getElementById('multiply4');
+      const divide4DOM = document.getElementById('divide4');
+
+      function submit() {
+        /* String & String Operation */
+        add1DOM.innerHTML = num1DOM.value + num2DOM.value;
+        subtract1DOM.innerHTML = num1DOM.value - num2DOM.value;
+        multiply1DOM.innerHTML = num1DOM.value * num2DOM.value;
+        divide1DOM.innerHTML = num1DOM.value / num2DOM.value;
+
+        /* Number & String Operation */
+        add2DOM.innerHTML = parseFloat(num1DOM.value) + num2DOM.value;
+        subtract2DOM.innerHTML = parseFloat(num1DOM.value) - num2DOM.value;
+        multiply2DOM.innerHTML = parseFloat(num1DOM.value) * num2DOM.value;
+        divide2DOM.innerHTML = parseFloat(num1DOM.value) / num2DOM.value;
+
+        /* Number & Number Operation */
+        add3DOM.innerHTML =
+          parseFloat(num1DOM.value) + parseFloat(num2DOM.value);
+        subtract3DOM.innerHTML =
+          parseFloat(num1DOM.value) - parseFloat(num2DOM.value);
+        multiply3DOM.innerHTML =
+          parseFloat(num1DOM.value) * parseFloat(num2DOM.value);
+        divide3DOM.innerHTML =
+          parseFloat(num1DOM.value) / parseFloat(num2DOM.value);
+
+        /* String & Number Operation */
+        add4DOM.innerHTML = num1DOM.value + parseFloat(num2DOM.value);
+        subtract4DOM.innerHTML = num1DOM.value - parseFloat(num2DOM.value);
+        multiply4DOM.innerHTML = num1DOM.value * parseFloat(num2DOM.value);
+        divide4DOM.innerHTML = num1DOM.value / parseFloat(num2DOM.value);
+      }
+    </script>
+  </body>
+</html>
