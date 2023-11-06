@@ -16,10 +16,10 @@
       const displayResult = document.getElementById('result');
 
       function result() {
-        let position = 'Positions: ';
+        let position = '';
         for (let i = 0; i < userText.value.length; i++) {
           position +=
-            'Character ' + userText.value[i] + ' in position ' + i + ', ';
+            'Character ' + userText.value[i] + ' in position ' + i + '<br>';
         }
         displayResult.innerHTML =
           'Text length: ' +
