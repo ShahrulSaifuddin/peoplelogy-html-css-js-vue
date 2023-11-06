@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <center>
+      <h1>Age Group Categorization</h1>
+      <!-- Form -->
+      <label>Enter your age: </label>
+      <input type="text" id="age" />
+      <button onclick="submit()">Submit</button>
+      <!-- Result -->
+      <br /><br />
+      <div id="result"></div>
+    </center>
+
+    <script>
+      /* Declare Variable */
+      const age = document.getElementById('age');
+
+      /* Function */
+      function submit() {
+        console.log(isNaN(age.value));
+        let result;
+        if (age.value >= 65) {
+          result = 'Senior Citizen';
+        } else if (age.value >= 20) {
+          result = 'Adult';
+        } else if (age.value >= 13) {
+          result = 'Teenager';
+        } else if (age.value < 13) {
+          result = 'Child';
+        } else {
+          result = 'Please Enter Number Only';
+        }
+
+        /* Display Result */
+        if (!isNaN(age.value)) {
+          document.getElementById('result').innerHTML = 'You are a ' + result;
+        } else {
+          document.getElementById('result').innerHTML = result;
+        }
+      }
+    </script>
+  </body>
+</html>
