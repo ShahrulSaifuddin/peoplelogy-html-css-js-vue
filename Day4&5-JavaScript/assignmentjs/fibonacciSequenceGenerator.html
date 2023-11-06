@@ -19,6 +19,7 @@
 
     <script>
       function generateFibonacci() {
+        /* Get termcount value */
         const termCount = parseInt(document.getElementById('termCount').value);
         let fibonacciSequence = [0, 1];
 
@@ -28,6 +29,7 @@
           fibonacciSequence.push(nextTerm);
         }
 
+        /* Display Output */
         document.getElementById('output').innerHTML =
           // fibonacciSequence.join('\n');
           fibonacciSequence.join(', ');
