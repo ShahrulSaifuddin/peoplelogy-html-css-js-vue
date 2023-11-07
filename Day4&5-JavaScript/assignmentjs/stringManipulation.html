@@ -9,6 +9,7 @@
     <center>
       <h1>String Manipulation</h1>
     </center>
+    <!-- form -->
     <div>
       <label>Enter any text: </label>
       <input type="text" id="text" />
@@ -19,6 +20,7 @@
       <input type="text" id="position" />
       <button onclick="searchString()">Submit</button>
     </div>
+    <!-- display result -->
     <div>
       <h4>Result:</h4>
       <div id="result"></div>
@@ -26,6 +28,7 @@
     <div id="charResultDOM"></div>
 
     <script>
+      /* declare variables */
       const stringDOM = document.getElementById('text');
       const stringResultsDOM = document.getElementById('result');
       const charDOM = document.getElementById('position');
@@ -33,12 +36,13 @@
       let textArray = '';
 
       function result() {
-        let position = '';
-        let character = '';
+        /* convert string into an array */
         textArray = stringDOM.value.split('');
         if (textArray.length === 0) return;
 
         /* to display all character indices */
+        // let position = '';
+        // let character = '';
         // for (let i = 0; i < stringDOM.value.length; i++) {
         //   if (stringDOM.value[i] === ' ') {
         //     character = 'white space';
@@ -60,6 +64,7 @@
 
         searchString();
 
+        /* display result into browser */
         stringResultsDOM.innerHTML =
           'Text length: ' +
           stringDOM.value.length +
@@ -70,13 +75,15 @@
       }
 
       function searchString() {
+        /* find index of a single character */
         let resultPosition = textArray.indexOf(charDOM.value);
-        console.log(resultPosition);
+        /* validate string input */
         if (stringDOM.value === '') {
           return alert(
             'Please enter any text to get the result before you can find the index of any character.'
           );
         }
+        /* validate character input */
         if (charDOM.value.length > 1) {
           alert('You can only search one character index at a time');
         } else if (charDOM.value === '') {
@@ -85,6 +92,7 @@
           charResultDOM.innerHTML =
             'Position of character ' + charDOM.value + ': ' + resultPosition;
         }
+        /* validate if there is no result */
         if (resultPosition === -1) {
           resultPosition = '';
         }
