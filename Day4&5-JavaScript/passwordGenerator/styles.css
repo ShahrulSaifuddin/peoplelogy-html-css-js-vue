@@ -1,0 +1,50 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 90%;
+  max-width: 700px;
+  height: 100vh;
+  display: grid;
+  place-items: center;
+  text-align: center;
+  margin: 0 auto;
+  background-color: black;
+}
+
+.container {
+  background-color: white;
+  border-radius: 10px;
+  padding: 1rem;
+}
+
+h1 {
+  text-transform: capitalize;
+  margin-bottom: 2rem;
+}
+
+#password {
+  border: none;
+  margin-bottom: 1rem;
+  padding: 5px 10px;
+  text-align: center;
+}
+
+#password:focus {
+  outline: none;
+}
+
+button {
+  border-radius: 10px;
+  padding: 5px 10px;
+  background-color: transparent;
+}
+
+button:hover {
+  background-color: black;
+  color: white;
+  transition: ease-in-out 0.3s;
+}
