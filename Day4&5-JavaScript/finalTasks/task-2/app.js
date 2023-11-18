@@ -1,9 +1,9 @@
 /* Declare Variable */
 const num = document.getElementById('num');
 
-/* Function */
+/* Check Number Function */
 function checkNumber() {
-  let result;
+  let result; // store the final result based on user input
   if (num.value > 0) {
     result = 'positive';
   } else if (num.value == 0) {
@@ -15,6 +15,7 @@ function checkNumber() {
   }
 
   /* Display Result */
+  // Validate the input number
   if (!isNaN(num.value)) {
     document.getElementById('result').innerHTML = 'The result is ' + result;
     console.log(result);

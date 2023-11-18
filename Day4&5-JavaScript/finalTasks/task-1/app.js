@@ -2,7 +2,7 @@
 const num1 = parseFloat(prompt('Please enter your first number'));
 const num2 = parseFloat(prompt('Please enter your second number'));
 
-/* calculation */
+/* Mathematical calculation */
 const add = num1 + num2;
 const subtraction = num1 - num2;
 const multiply = num1 * num2;
@@ -13,18 +13,18 @@ if (num2 === 0) {
   division = (num1 / num2).toFixed(2);
 }
 
-/* display result */
+/* display first and second number to browser */
 document.write('First Number: ' + num1 + '<br>');
 document.write('Second Number: ' + num2 + '<br><br>');
 
-/* Addition */
+/* Result for Addition */
 document.write(
   'Result of Addition: ' + num1 + ' + ' + num2 + ' = ' + add.toFixed(2) + '<br>'
 );
 console.log(
   'Result of Addition: ' + num1 + ' + ' + num2 + ' = ' + add.toFixed(2)
 );
-/* Subtraction */
+/* Result for Subtraction */
 document.write(
   'Result of Subtraction: ' +
     num1 +
@@ -42,7 +42,7 @@ console.log(
     ' = ' +
     +subtraction.toFixed(2)
 );
-/* Multiplication */
+/* Result for Multiplication */
 document.write(
   'Result of Multiplication: ' +
     num1 +
@@ -60,6 +60,6 @@ console.log(
     ' = ' +
     +multiply.toFixed(2)
 );
-/* Division */
+/* Result for Division */
 document.write('Result of Division: ' + num1 + ' / ' + num2 + ' = ' + division);
 console.log('Result of Division: ' + num1 + ' / ' + num2 + ' = ' + division);
