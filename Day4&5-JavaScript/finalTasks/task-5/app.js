@@ -1,3 +1,5 @@
+/* TASK 5 */
+
 /* Array */
 const fruits = ['Apple', 'Banana', 'Orange'];
 

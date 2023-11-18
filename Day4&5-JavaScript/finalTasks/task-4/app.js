@@ -1,3 +1,5 @@
+/* TASK 4 */
+
 /* Declare Variables */
 const result = document.querySelector('.result');
 const btn = document.querySelector('.btn');

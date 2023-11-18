@@ -1,3 +1,5 @@
+/* TASK 1 */
+
 /* declare variable */
 const num1 = parseFloat(prompt('Please enter your first number'));
 const num2 = parseFloat(prompt('Please enter your second number'));

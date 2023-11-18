@@ -1,3 +1,5 @@
+/* TASK 2 */
+
 /* Declare Variable */
 const num = document.getElementById('num');
 

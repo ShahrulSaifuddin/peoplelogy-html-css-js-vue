@@ -1,3 +1,5 @@
+/* TASK 3 */
+
 /* declare variables */
 const stringDOM = document.getElementById('text');
 const stringResultsDOM = document.getElementById('result');
