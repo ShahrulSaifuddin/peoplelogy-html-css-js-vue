@@ -1,0 +1,9 @@
+.container ol {
+  display: flex;
+  justify-content: center;
+}
+
+li {
+  list-style-type: none;
+  padding: 10px;
+}
