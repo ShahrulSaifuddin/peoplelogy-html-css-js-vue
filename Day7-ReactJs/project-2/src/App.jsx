@@ -1,6 +1,10 @@
 // import { useState } from 'react';
 
-import FetchApi from './components/FetchApi';
+import Todo from './components/Todo';
+
+// import Props from './components/Props';
+
+// import FetchApi from './components/FetchApi';
 // import Test from './components/Test';
 
 function App() {
@@ -18,10 +22,18 @@ function App() {
   //     </div>
   //   </div>
   // );
+
+  // const name = 'shahrul';
+
+  // const check = () => {
+  //   alert('You click this button');
+  // };
   return (
     <div className="container">
       {/* <Test />; */}
-      <FetchApi />
+      {/* <FetchApi /> */}
+      {/* <Props name={name} check={check} /> */}
+      <Todo />
     </div>
   );
 }
