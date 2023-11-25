@@ -1,6 +1,7 @@
 // import { useState } from 'react';
 
-import Test from './Test';
+import FetchApi from './components/FetchApi';
+// import Test from './components/Test';
 
 function App() {
   // first variable is responsible to holdd all the data
@@ -19,7 +20,8 @@ function App() {
   // );
   return (
     <div className="container">
-      <Test />;
+      {/* <Test />; */}
+      <FetchApi />
     </div>
   );
 }

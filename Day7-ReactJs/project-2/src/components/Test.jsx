@@ -1,7 +1,7 @@
 import { useState } from 'react';
 
 // Importing data from an external source (data.js).
-import data from './data';
+import data from '../data';
 
 function Test() {
   // Using the 'useState' hook to initialize a state variable 'user' with the data imported.

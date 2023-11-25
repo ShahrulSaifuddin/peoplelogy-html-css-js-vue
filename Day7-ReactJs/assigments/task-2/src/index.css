@@ -19,29 +19,6 @@
   box-sizing: border-box;
 }
 
-.container {
-  height: 100vh;
-  display: grid;
-  place-items: center;
-  text-align: center;
-}
-
-section {
-  width: 100%;
-  display: grid;
-  place-items: center;
-  text-align: center;
-}
-
-article {
-  width: 90%;
-  max-width: 700px;
-  background: white;
-  color: black;
-  border-radius: 10px;
-  margin: 1rem 0;
-}
-
 table,
 tr,
 td,
@@ -51,6 +28,7 @@ th {
 
 table {
   border-collapse: collapse;
+  margin: 1rem;
 }
 
 td {
@@ -65,4 +43,10 @@ th {
 img {
   width: 100px;
   height: 100px;
+}
+
+h1 {
+  text-align: center;
+  text-transform: uppercase;
+  margin: 1rem 0;
 }
