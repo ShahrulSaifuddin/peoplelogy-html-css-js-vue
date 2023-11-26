@@ -1,12 +1,15 @@
 // import UseTime from './components/UseTime';
 
-import ToggleColor from './components/ToggleColor';
+import Git from './components/Git';
+
+// import ToggleColor from './components/ToggleColor';
 
 function App() {
   return (
     <div>
       {/* <UseTime /> */}
-      <ToggleColor />
+      {/* <ToggleColor /> */}
+      <Git />
     </div>
   );
 }
