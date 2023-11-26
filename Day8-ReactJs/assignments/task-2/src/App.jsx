@@ -1,5 +1,4 @@
-import { useEffect } from 'react';
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { FaQuoteRight } from 'react-icons/fa';
 
 function App() {
