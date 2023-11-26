@@ -45,7 +45,7 @@ function App() {
         <p className="email">{data?.email}</p>
         <p className="cell">+{data?.cell}</p>
         <button className="btn btn-hipster" onClick={() => fetchUserData()}>
-          surprise me
+          random user
         </button>
       </article>
     </main>
