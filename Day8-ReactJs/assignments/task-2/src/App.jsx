@@ -22,8 +22,6 @@ function App() {
     fetchUserData();
   }, []);
 
-  console.log(data);
-
   if (isLoading) {
     return (
       <div className="loader-container">
