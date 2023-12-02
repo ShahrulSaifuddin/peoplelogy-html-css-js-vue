@@ -56,3 +56,10 @@ rules: {
 
 },
 };
+
+article {
+display: grid;
+place-items: center;
+background: linear-gradient(rgba(63, 208, 212, 0.5), rgba(0, 0, 0, 0.7)),
+url(./images/img.jpg) center/cover no-repeat;
+}
