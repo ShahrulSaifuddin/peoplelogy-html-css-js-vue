@@ -3,10 +3,10 @@ import { Container, Image } from 'react-bootstrap';
 function TheHeader() {
   return (
     <Container className="d-flex justify-content-between align-items-center p-3">
-      <div className="social-icons">
+      <div className="d-flex gap-2">
         <a href="">
           <Image
-            src="../../public/images/google-plus.png"
+            src="../../public/images/ig.png"
             fluid
             className="bg-transparent"
             style={{ width: '30px' }}
@@ -22,7 +22,7 @@ function TheHeader() {
         </a>
         <a href="">
           <Image
-            src="../../public/images/google-plus.png"
+            src="../../public/images/fb.png"
             fluid
             className="bg-transparent"
             style={{ width: '30px' }}
@@ -30,10 +30,10 @@ function TheHeader() {
         </a>
       </div>
       <h1>FURNITURE</h1>
-      <div className="cart-icons">
+      <div className="d-flex gap-2">
         <a href="">
           <Image
-            src="../../public/images/heart.png"
+            src="../../public/images/search.png"
             fluid
             className="bg-transparent"
             style={{ width: '30px' }}
@@ -49,7 +49,7 @@ function TheHeader() {
         </a>
         <a href="">
           <Image
-            src="../../public/images/heart.png"
+            src="../../public/images/shopping-cart.png"
             fluid
             className="bg-transparent"
             style={{ width: '30px' }}

@@ -10,48 +10,96 @@ function Product() {
     >
       <h1 className="text-center pb-5">Trendy Products</h1>
       <Container className="d-flex flex-wrap justify-content-around gap-5">
-        <Card style={{ width: '18rem' }} className="text-center">
-          <Card.Img variant="top" src="../../public/images/card2.png" />
+        <Card
+          style={{ width: '18rem' }}
+          className="text-center shadow-lg p-4 mb-4 bg-white"
+          id="card-body"
+        >
+          <Card.Img
+            variant="top"
+            src="../../public/images/card2.png"
+            id="card-img"
+          />
           <Card.Body>
             <Card.Title>Card Title</Card.Title>
             <Card.Text>Price: $1000</Card.Text>
             <Button variant="outline-dark">Shop Now</Button>
           </Card.Body>
         </Card>
-        <Card style={{ width: '18rem' }} className="text-center">
-          <Card.Img variant="top" src="../../public/images/card3.png" />
+        <Card
+          style={{ width: '18rem' }}
+          className="text-center shadow-lg p-4 mb-4 bg-white"
+          id="card-body"
+        >
+          <Card.Img
+            variant="top"
+            id="card-img"
+            src="../../public/images/card3.png"
+          />
           <Card.Body>
             <Card.Title>Card Title</Card.Title>
             <Card.Text>Price: $1000</Card.Text>
             <Button variant="outline-dark">Shop Now</Button>
           </Card.Body>
         </Card>{' '}
-        <Card style={{ width: '18rem' }} className="text-center">
-          <Card.Img variant="top" src="../../public/images/card4.png" />
+        <Card
+          style={{ width: '18rem' }}
+          className="text-center shadow-lg p-4 mb-4 bg-white"
+          id="card-body"
+        >
+          <Card.Img
+            variant="top"
+            id="card-img"
+            src="../../public/images/card4.png"
+          />
           <Card.Body>
             <Card.Title>Card Title</Card.Title>
             <Card.Text>Price: $1000</Card.Text>
             <Button variant="outline-dark">Shop Now</Button>
           </Card.Body>
         </Card>{' '}
-        <Card style={{ width: '18rem' }} className="text-center">
-          <Card.Img variant="top" src="../../public/images/card5.png" />
+        <Card
+          style={{ width: '18rem' }}
+          className="text-center shadow-lg p-4 mb-4 bg-white"
+          id="card-body"
+        >
+          <Card.Img
+            variant="top"
+            id="card-img"
+            src="../../public/images/card5.png"
+          />
           <Card.Body>
             <Card.Title>Card Title</Card.Title>
             <Card.Text>Price: $1000</Card.Text>
             <Button variant="outline-dark">Shop Now</Button>
           </Card.Body>
         </Card>{' '}
-        <Card style={{ width: '18rem' }} className="text-center">
-          <Card.Img variant="top" src="../../public/images/card6.png" />
+        <Card
+          style={{ width: '18rem' }}
+          className="text-center shadow-lg p-4 mb-4 bg-white"
+          id="card-body"
+        >
+          <Card.Img
+            variant="top"
+            id="card-img"
+            src="../../public/images/card6.png"
+          />
           <Card.Body>
             <Card.Title>Card Title</Card.Title>
             <Card.Text>Price: $1000</Card.Text>
             <Button variant="outline-dark">Shop Now</Button>
           </Card.Body>
         </Card>{' '}
-        <Card style={{ width: '18rem' }} className="text-center">
-          <Card.Img variant="top" src="../../public/images/card7.png" />
+        <Card
+          style={{ width: '18rem' }}
+          className="text-center shadow-lg p-4 mb-4 bg-white"
+          id="card-body"
+        >
+          <Card.Img
+            variant="top"
+            id="card-img"
+            src="../../public/images/card7.png"
+          />
           <Card.Body>
             <Card.Title>Card Title</Card.Title>
             <Card.Text>Price: $1000</Card.Text>
