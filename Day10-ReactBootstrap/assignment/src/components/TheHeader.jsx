@@ -1,8 +1,8 @@
-import { Image } from 'react-bootstrap';
+import { Container, Image } from 'react-bootstrap';
 
 function TheHeader() {
   return (
-    <div className="d-flex justify-content-between align-items-center px-5">
+    <Container className="d-flex justify-content-between align-items-center p-3">
       <div className="social-icons">
         <a href="">
           <Image
@@ -56,7 +56,7 @@ function TheHeader() {
           />
         </a>
       </div>
-    </div>
+    </Container>
   );
 }
 

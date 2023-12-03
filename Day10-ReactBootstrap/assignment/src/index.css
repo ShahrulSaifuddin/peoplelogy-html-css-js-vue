@@ -10,5 +10,4 @@ section {
   background: linear-gradient(rgba(63, 208, 212, 0.5), rgba(0, 0, 0, 0.7)),
     url(/images/sf.png) center/cover no-repeat;
   height: 100vh;
-  z-index: 5;
 }
