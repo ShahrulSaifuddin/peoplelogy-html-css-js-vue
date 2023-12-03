@@ -1,0 +1,14 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+section {
+  display: grid;
+  grid-template-rows: auto 1fr;
+  background: linear-gradient(rgba(63, 208, 212, 0.5), rgba(0, 0, 0, 0.7)),
+    url(/images/sf.png) center/cover no-repeat;
+  height: 100vh;
+  z-index: 5;
+}
