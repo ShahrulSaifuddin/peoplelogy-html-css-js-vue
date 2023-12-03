@@ -1,0 +1,29 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.hero-container {
+  background-color: rgb(14, 90, 126);
+  height: 80vh;
+  display: grid;
+  grid-template-rows: auto 1fr;
+}
+
+#nav-link-item {
+  color: white !important;
+  transition: all 0.5s ease-out;
+}
+
+#nav-link-item:hover {
+  text-shadow: 0px 0px 10px #5cfaff, 0px 0px 20px #5cfaff, 0px 0px 40px #5cfaff,
+    0px 0px 80px #5cfaff !important;
+
+  color: #5cfaff !important;
+}
+
+.brandName {
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-weight: bold;
+}
