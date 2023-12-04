@@ -15,11 +15,7 @@ function Product() {
           className="text-center shadow-lg p-4 mb-4 bg-white"
           id="card-body"
         >
-          <Card.Img
-            variant="top"
-            src="../../public/images/card2.png"
-            id="card-img"
-          />
+          <Card.Img variant="top" src="images/card2.png" id="card-img" />
           <Card.Body>
             <Card.Title>Card Title</Card.Title>
             <Card.Text>Price: $1000</Card.Text>
@@ -31,11 +27,7 @@ function Product() {
           className="text-center shadow-lg p-4 mb-4 bg-white"
           id="card-body"
         >
-          <Card.Img
-            variant="top"
-            id="card-img"
-            src="../../public/images/card3.png"
-          />
+          <Card.Img variant="top" id="card-img" src="images/card3.png" />
           <Card.Body>
             <Card.Title>Card Title</Card.Title>
             <Card.Text>Price: $1000</Card.Text>
@@ -47,11 +39,7 @@ function Product() {
           className="text-center shadow-lg p-4 mb-4 bg-white"
           id="card-body"
         >
-          <Card.Img
-            variant="top"
-            id="card-img"
-            src="../../public/images/card4.png"
-          />
+          <Card.Img variant="top" id="card-img" src="images/card4.png" />
           <Card.Body>
             <Card.Title>Card Title</Card.Title>
             <Card.Text>Price: $1000</Card.Text>
@@ -63,11 +51,7 @@ function Product() {
           className="text-center shadow-lg p-4 mb-4 bg-white"
           id="card-body"
         >
-          <Card.Img
-            variant="top"
-            id="card-img"
-            src="../../public/images/card5.png"
-          />
+          <Card.Img variant="top" id="card-img" src="images/card5.png" />
           <Card.Body>
             <Card.Title>Card Title</Card.Title>
             <Card.Text>Price: $1000</Card.Text>
@@ -79,11 +63,7 @@ function Product() {
           className="text-center shadow-lg p-4 mb-4 bg-white"
           id="card-body"
         >
-          <Card.Img
-            variant="top"
-            id="card-img"
-            src="../../public/images/card6.png"
-          />
+          <Card.Img variant="top" id="card-img" src="images/card6.png" />
           <Card.Body>
             <Card.Title>Card Title</Card.Title>
             <Card.Text>Price: $1000</Card.Text>
@@ -95,11 +75,7 @@ function Product() {
           className="text-center shadow-lg p-4 mb-4 bg-white"
           id="card-body"
         >
-          <Card.Img
-            variant="top"
-            id="card-img"
-            src="../../public/images/card7.png"
-          />
+          <Card.Img variant="top" id="card-img" src="images/card7.png" />
           <Card.Body>
             <Card.Title>Card Title</Card.Title>
             <Card.Text>Price: $1000</Card.Text>

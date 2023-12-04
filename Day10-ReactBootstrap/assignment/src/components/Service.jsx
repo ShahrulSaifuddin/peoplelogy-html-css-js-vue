@@ -10,7 +10,7 @@ function Service() {
           className="text-center shadow-lg p-4 mb-4 bg-white shadow-lg p-4 mb-4 bg-white"
           id="card-body"
         >
-          <Card.Img variant="top" src="../../public/images/c1.png" />
+          <Card.Img variant="top" src="images/c1.png" />
           <Card.Body>
             <Card.Title>Card Title</Card.Title>
             <Card.Text>
@@ -26,7 +26,7 @@ function Service() {
           className="text-center shadow-lg p-4 mb-4 bg-white shadow-lg p-4 mb-4"
           id="card-body"
         >
-          <Card.Img variant="top" src="../../public/images/c2.png" />
+          <Card.Img variant="top" src="images/c2.png" />
           <Card.Body>
             <Card.Title>Card Title</Card.Title>
             <Card.Text>
@@ -42,7 +42,7 @@ function Service() {
           className="text-center shadow-lg p-4 mb-4 bg-white"
           id="card-body"
         >
-          <Card.Img variant="top" src="../../public/images/c3.png" />
+          <Card.Img variant="top" src="images/c3.png" />
           <Card.Body>
             <Card.Title>Card Title</Card.Title>
             <Card.Text>
@@ -58,7 +58,7 @@ function Service() {
           className="text-center shadow-lg p-4 mb-4 bg-white"
           id="card-body"
         >
-          <Card.Img variant="top" src="../../public/images/c1.png" />
+          <Card.Img variant="top" src="images/c1.png" />
           <Card.Body>
             <Card.Title>Card Title</Card.Title>
             <Card.Text>
@@ -74,7 +74,7 @@ function Service() {
           className="text-center shadow-lg p-4 mb-4 bg-white"
           id="card-body"
         >
-          <Card.Img variant="top" src="../../public/images/c1.png" />
+          <Card.Img variant="top" src="images/c1.png" />
           <Card.Body>
             <Card.Title>Card Title</Card.Title>
             <Card.Text>
@@ -90,7 +90,7 @@ function Service() {
           className="text-center shadow-lg p-4 mb-4 bg-white"
           id="card-body"
         >
-          <Card.Img variant="top" src="../../public/images/c1.png" />
+          <Card.Img variant="top" src="images/c1.png" />
           <Card.Body>
             <Card.Title>Card Title</Card.Title>
             <Card.Text>
