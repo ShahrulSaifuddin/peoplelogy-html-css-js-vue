@@ -1,17 +1,15 @@
 <template>
-  <!-- <MakeHome /> -->
-  <FetctApi />
+  <TheNavigation />
+  <router-view></router-view>
 </template>
 
 <script>
-// import MakeHome from './components/MakeHome.vue';
-import FetctApi from './components/FetctApi.vue';
+import TheNavigation from './components/TheNavigation.vue';
 
 export default {
   name: 'App',
   components: {
-    // MakeHome,
-    FetctApi,
+    TheNavigation,
   },
 };
 </script>
@@ -23,6 +21,5 @@ export default {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-  margin-top: 60px;
 }
 </style>
