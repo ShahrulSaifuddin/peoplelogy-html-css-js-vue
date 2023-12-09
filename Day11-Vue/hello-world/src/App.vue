@@ -1,18 +1,17 @@
 <template>
-  <!-- <img alt="Vue logo" src="./assets/logo.png" /> -->
-  <!-- <HelloWorld msg="Welcome to Your Vue.js App"/> -->
-  <MakeHome />
+  <!-- <MakeHome /> -->
+  <FetctApi />
 </template>
 
 <script>
-// import HelloWorld from './components/HelloWorld.vue'
-import MakeHome from './components/MakeHome.vue';
+// import MakeHome from './components/MakeHome.vue';
+import FetctApi from './components/FetctApi.vue';
 
 export default {
   name: 'App',
   components: {
-    // HelloWorld,
-    MakeHome,
+    // MakeHome,
+    FetctApi,
   },
 };
 </script>
