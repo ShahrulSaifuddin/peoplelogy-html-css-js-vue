@@ -62,6 +62,7 @@ button {
 p {
   padding: 5px;
   text-transform: capitalize;
+  font-size: 1.5rem;
 }
 button:hover {
   background: black;
