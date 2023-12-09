@@ -57,7 +57,6 @@ export default {
         password: this.enteredPassword,
       };
       this.formDetails.push(formData);
-      console.log('formDetails', this.formDetails);
       this.enteredName = '';
       this.enteredEmail = '';
       this.enteredPassword = '';
@@ -77,7 +76,7 @@ form {
 }
 input {
   margin: 0.25rem 0;
-  width: 100%;
+  width: 300px;
   padding: 0.25rem 0.5rem;
   border-radius: 0.25rem;
 }
