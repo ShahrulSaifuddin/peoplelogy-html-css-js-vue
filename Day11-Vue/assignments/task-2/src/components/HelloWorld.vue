@@ -48,26 +48,6 @@ export default {
   display: grid;
   place-items: center;
 }
-form {
-  margin: 3rem 0;
-}
-input {
-  margin: 0.25rem 0;
-  width: 300px;
-  padding: 0.25rem 0.5rem;
-  border-radius: 0.25rem;
-}
-button {
-  padding: 0.25rem 0.5rem;
-  border-radius: 0.25rem;
-  background: transparent;
-  transition: all 0.3s ease-out;
-  margin-top: 1rem;
-}
-button:hover {
-  background: black;
-  color: white;
-}
 table,
 tr,
 th,
