@@ -21,7 +21,7 @@
           v-model="enteredPassword"
         />
         <br />
-        <button type="submit">Submit</button>
+        <button type="submit" @click="submit">Submit</button>
       </form>
       <table>
         <tr>
@@ -29,10 +29,10 @@
           <th>Email</th>
           <th>Password</th>
         </tr>
-        <tr>
-          <td>{{ enteredName }}</td>
-          <td>{{ enteredEmail }}</td>
-          <td>{{ enteredPassword }}</td>
+        <tr v-for="data in formDetails" :key="data.name">
+          <td>{{ data.name }}</td>
+          <td>{{ data.email }}</td>
+          <td>{{ data.password }}</td>
         </tr>
       </table>
     </section>
@@ -46,7 +46,22 @@ export default {
       enteredName: '',
       enteredEmail: '',
       enteredPassword: '',
+      formDetails: [],
     };
+  },
+  methods: {
+    submit() {
+      let formData = {
+        name: this.enteredName,
+        email: this.enteredEmail,
+        password: this.enteredPassword,
+      };
+      this.formDetails.push(formData);
+      console.log('formDetails', this.formDetails);
+      this.enteredName = '';
+      this.enteredEmail = '';
+      this.enteredPassword = '';
+    },
   },
 };
 </script>
