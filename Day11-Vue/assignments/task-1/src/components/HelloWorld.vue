@@ -29,10 +29,10 @@
           <th>Email</th>
           <th>Password</th>
         </tr>
-        <tr v-for="data in formDetails" :key="data.name">
-          <td>{{ data.name }}</td>
-          <td>{{ data.email }}</td>
-          <td>{{ data.password }}</td>
+        <tr>
+          <td>{{ formDetails.name }}</td>
+          <td>{{ formDetails.email }}</td>
+          <td>{{ formDetails.password }}</td>
         </tr>
       </table>
     </section>
@@ -46,17 +46,16 @@ export default {
       enteredName: '',
       enteredEmail: '',
       enteredPassword: '',
-      formDetails: [],
+      formDetails: {},
     };
   },
   methods: {
     submit() {
-      let formData = {
+      this.formDetails = {
         name: this.enteredName,
         email: this.enteredEmail,
         password: this.enteredPassword,
       };
-      this.formDetails.push(formData);
       this.enteredName = '';
       this.enteredEmail = '';
       this.enteredPassword = '';
