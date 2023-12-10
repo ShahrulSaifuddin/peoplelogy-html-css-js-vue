@@ -39,7 +39,8 @@
     <p><b>name: </b>{{ formData.name }}</p>
     <p><b>email: </b>{{ formData.email }}</p>
     <p><b>shipping address: </b>{{ formData.shipping }}</p>
-    <p><b>credit cars: </b>{{ formData.credit }}</p>
+    <p><b>credit card: </b>{{ formData.credit }}</p>
+    <p><b>security number: </b>{{ formData.security }}</p>
   </div>
 </template>
 
