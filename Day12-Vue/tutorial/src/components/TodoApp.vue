@@ -9,10 +9,29 @@
     <button type="submit" @click="addTodo">Add Task</button>
   </form>
   <div class="lists-container">
-    <ul>
+    <!-- <ul>
       <li v-for="todo in todos" :key="todo.id">
         {{ todo.name }}
         <span>
+          <button @click="removeTodo(todo.id)">Remove</button>
+        </span>
+      </li>
+    </ul> -->
+    <ul>
+      <li v-for="todo in todos" :key="todo.id">
+        <span v-if="todo.editing">
+          <input
+            type="text"
+            v-model="todo.name"
+            @keyup.enter="saveEdit(todo.id)"
+            @keyup.esc="cancelEdit(todo)"
+          />
+        </span>
+        <span v-else>
+          {{ todo.name }}
+        </span>
+        <span>
+          <button @click="toggleEdit(todo)">Edit</button>
           <button @click="removeTodo(todo.id)">Remove</button>
         </span>
       </li>
@@ -39,6 +58,18 @@ export default {
       if (index !== -1) {
         this.todos.splice(index, 1);
       }
+    },
+    toggleEdit(todo) {
+      todo.editing = !todo.editing;
+    },
+    saveEdit(itemId) {
+      const todo = this.todos.find((t) => t.id === itemId);
+      if (todo) {
+        todo.editing = false;
+      }
+    },
+    cancelEdit(todo) {
+      todo.editing = false;
     },
   },
 };
@@ -69,7 +100,7 @@ input {
   padding: 0.25rem 0.5rem;
   border-radius: 0.25rem;
 }
-span button {
+button {
   padding: 0.25rem 0.5rem;
   border-radius: 0.25rem;
   background: transparent;
@@ -77,7 +108,7 @@ span button {
   transition: all 0.3s ease-out;
 }
 
-span:hover button {
+button:hover {
   background: black;
   color: white;
 }

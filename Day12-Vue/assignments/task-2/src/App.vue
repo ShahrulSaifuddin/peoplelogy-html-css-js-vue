@@ -1,18 +1,14 @@
 <template>
   <div class="container">
-    <!-- <TodoApp /> -->
-    <!-- <hr /> -->
     <CounterDownApp />
   </div>
 </template>
 
 <script>
-// import TodoApp from './components/TodoApp.vue';
 import CounterDownApp from './components/CounterDownApp.vue';
 export default {
   name: 'App',
   components: {
-    // TodoApp,
     CounterDownApp,
   },
 };
