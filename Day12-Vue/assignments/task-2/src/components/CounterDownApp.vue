@@ -11,7 +11,7 @@
   </form>
   <div v-if="isCounting">
     <h2>time remaining</h2>
-    <p>{{ hour }} : {{ minute }} : {{ second }}</p>
+    <p>{{ formatTime() }}</p>
   </div>
   <div v-if="isCountdownComplete">
     <h2>countdown complete</h2>
@@ -55,6 +55,12 @@ export default {
       this.hour = Math.floor(this.duration / 3600);
       this.minute = Math.floor((this.duration % 3600) / 60);
       this.second = this.duration % 60;
+    },
+    formatTime() {
+      const formattedHour = this.hour.toString().padStart(2, '0');
+      const formattedMinute = this.minute.toString().padStart(2, '0');
+      const formattedSecond = this.second.toString().padStart(2, '0');
+      return `${formattedHour} : ${formattedMinute} : ${formattedSecond}`;
     },
   },
 };
